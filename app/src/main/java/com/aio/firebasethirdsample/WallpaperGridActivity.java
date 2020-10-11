@@ -42,13 +42,13 @@ public class WallpaperGridActivity extends AppCompatActivity {
         adapter = new WallpaperPostAdapter(options);
         gridrecyclerView.setAdapter(adapter);
 
-        //clickable recycler item
-//        recyclerView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(this, ActivityTwo.class);
-//            }
-//        });
+		//clickable recycler full view item
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(this, FullViewActivityName.class);
+            }
+        });
 
     }
 
